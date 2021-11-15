@@ -1,8 +1,11 @@
 #-------------------------------IMPORTS-------------------------------------#
 import pprint
 import hashlib, os
+
 from pymongo import MongoClient
 from tkinter import *
+from tkinter import simpledialog
+from functools import partial
 
 #-------------------------------UI-SETUP & DB-------------------------------------#
 client = MongoClient()

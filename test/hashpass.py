@@ -54,3 +54,5 @@ key = users[username]['key']
 new_key = hashlib.pbkdf2_hmac('sha256', password.encode('utf-8'), salt, 100000)
 
 assert key == new_key # The keys are the same thus the passwords were the same for this user also
+
+print(users)
