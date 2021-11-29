@@ -1,13 +1,19 @@
-from pymongo import MongoClient
+from functools import partial
+from tkinter import *
+import webbrowser
+from tkHyperlinkManager import *
 
-client = MongoClient()
-db = client.password_manager_test01 
-userdata = db.userdata
+root = Tk()
+text = Text()
+text.pack()
+hyperlink = HyperlinkManager(text)
+text.insert(INSERT, "Hello, ")
+text.insert(INSERT, "Stack Overflow",
+            hyperlink.add(partial(webbrowser.open, "http://stackoverflow.com")))
+text.insert(INSERT, "!\n\n")
+text.insert(INSERT, "And here's ")
+text.insert(INSERT, "a search engine",
+            hyperlink.add(partial(webbrowser.open, "http://duckduckgo.com")))
+text.insert(INSERT, ".")
 
-var = userdata
-
-dbnames = db.list_collection_names()
-if var not in dbnames:
-    print("here")
-else:
-    print("not here")
+root.mainloop()
