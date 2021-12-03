@@ -15,7 +15,7 @@ import os
 from tkinter import ttk
 import re
 
-# ----------------------------------------------------------------------------------------------------------------------------#
+# ---------------------------------------------------------------------------------------------------------------------------#
 client = MongoClient()
 db = client.password_manager
 userdata = db.userdata
@@ -1176,8 +1176,8 @@ def help():
     link.bind("<Button-1>", lambda e: callback("https://zexceed012.github.io"))
 
     # def new_copy():
-    # 	pyperclip.copy("https://zexceed012.github.io")
-    # 	tkinter.messagebox.showinfo("Link Copied!", "Please paste & open the link in your browser.")
+    #   pyperclip.copy("https://zexceed012.github.io")
+    #   tkinter.messagebox.showinfo("Link Copied!", "Please paste & open the link in your browser.")
 
     # copy_button = Button(root1, text="Homepage - Help", command = new_copy ,width = 15, bg = "#4658E0", fg="white", highlightthickness=0, borderwidth=0)
     # copy_button.place(x = 180, y = 265)
@@ -1363,10 +1363,10 @@ def first_window():
                     receiver_email = email
                     password = "M8*5wbYCECzNdf!vPZ#jywJ3*zs*XFe8!hVERTfWS&R"
                     message = f"""\
-						Subject: Hi there
-						
-						This message is sent from SafePass.
-						Your OTP is {otp}."""
+                        Subject: Hi there
+                        
+                        This message is sent from SafePass.
+                        Your OTP is {otp}."""
                     context = ssl.create_default_context()
                     with smtplib.SMTP(smtp_server, port) as server:
                         server.ehlo()  # Can be omitted
@@ -1446,10 +1446,10 @@ def first_window():
                         receiver_email = email
                         password = "M8*5wbYCECzNdf!vPZ#jywJ3*zs*XFe8!hVERTfWS&R"
                         message = f"""\
-						Subject: Hi there
-						
-						This message is sent from SafePass.
-						Your OTP is {otp}."""
+                        Subject: Hi there
+                        
+                        This message is sent from SafePass.
+                        Your OTP is {otp}."""
                         context = ssl.create_default_context()
                         with smtplib.SMTP(smtp_server, port) as server:
                             server.ehlo()  # Can be omitted

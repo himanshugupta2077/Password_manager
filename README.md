@@ -20,12 +20,11 @@ SafePass is an offline password manager written in python with tkinter. This app
 
 ### Executing program
 
-* Just run it from any IDE or terminal with python3 main.py
+* Run main.py from any IDE or terminal.
 
 ### Version History
 
-* 0.1
-    * Initial Release
+* 0.1 Initial Release
 
 ### License
 
