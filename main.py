@@ -1361,7 +1361,7 @@ def first_window():
                     smtp_server = "smtp.gmail.com"
                     sender_email = "safepass.helpdesk@gmail.com"
                     receiver_email = email
-                    password = "M8*5wbYCECzNdf!vPZ#jywJ3*zs*XFe8!hVERTfWS&R"
+                    password = "YOURPASSWORD"
                     message = f"""\
                         Subject: Hi there
                         
