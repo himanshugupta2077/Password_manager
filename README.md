@@ -4,15 +4,14 @@ A free, open source, light-weight and easy-to-use password manager.
 
 ## Description
 
-SafePass is an offline password manager written in python with tkinter. This application allows you to store all your passwords inside a single database collection, MongoDB, which is secured with SHA 256 hashing function. The hash key & salt are stored in system's keyring to crosscheck with the entered password. User can add passwords with other necessary fields (Title, URL, Username, Password, Notes).
+SafePass is an offline password manager written in python with tkinter. This application allows you to store all your passwords inside a single database collection, MongoDB, which is secured with SHA 256 hashing function. The hash key & salt are stored in system's keyring to crosscheck with the entered password. User can add passwords and other necessary fields (Title, URL, Username, Password, Notes).
 
 ## Feautres
 
-* Password Generator
+* Strong Password Generator
 * Secure Master Password with SHA-256
 * Auto-copy
-* URL-opener
-* Forgot Password Module
+* Password Forgot Module
 
 ## Technologies
 
@@ -42,11 +41,12 @@ SafePass is an offline password manager written in python with tkinter. This app
 ## Dependencies
 
 * Linux OS
+* Python (version 3 and above)
 * MongoDB Server
 
 ## Executing program
 
-* Run main.py from any IDE or terminal.
+* Run main.py from any IDE or terminal after installing dependencies and required modules.
 
 ## Version History
 
